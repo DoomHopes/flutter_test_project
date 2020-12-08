@@ -10,10 +10,11 @@ class MyRowColumn extends StatelessWidget {
         child: Row(
           // тоже самое и с Column
           mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             ColorBox(),
-            ColorBox(),
+            BiggerColorBox(),
             ColorBox(),
           ],
         ),
