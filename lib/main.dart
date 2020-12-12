@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test_project/row_column.dart';
 
+import 'my container.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -9,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'App',
         theme: ThemeData(primarySwatch: Colors.green),
-        home: MyRowColumn());
+        home: MyContainer());
   }
 }
 
