@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test_project/my%20container.dart';
-import 'package:flutter_test_project/row_column.dart';
+import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
-void main() => runApp(MyApp());
+void main() {
+  debugPaintSizeEnabled = false; // Показывает границы виджетов
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
