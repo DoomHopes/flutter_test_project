@@ -11,8 +11,11 @@ class MyFlexible extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             BiggerColorBox(),
-            Flexible(child: ColorBox()),
-            Flexible(child: ColorBox()),
+            Flexible(
+                fit: FlexFit
+                    .tight, //FlexFit показывает как элемент будет занимать все доступное пространство
+                child: ColorBox()),
+            Flexible(fit: FlexFit.tight, child: ColorBox()),
           ],
         ),
       ),
