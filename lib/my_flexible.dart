@@ -14,8 +14,11 @@ class MyFlexible extends StatelessWidget {
             Flexible(
                 fit: FlexFit
                     .tight, //FlexFit показывает как элемент будет занимать все доступное пространство
+                flex:
+                    2, //flex показывает долю которыю забирает себе каждый гибкий виджет
                 child: ColorBox()),
-            Flexible(fit: FlexFit.tight, child: ColorBox()),
+            Expanded(flex: 4, child: ColorBox()),
+            //Expanded(child: null) // тот же Flexible где fit = tight
           ],
         ),
       ),
