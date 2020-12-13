@@ -29,7 +29,7 @@ class MyContainer extends StatelessWidget {
                     .image,
                 fit: BoxFit.cover,
               ),
-              borderRadius: BorderRadius.circular(30)),
+              borderRadius: BorderRadius.circular(20)),
           child: Text(
             'Abrams',
             textAlign: TextAlign.center,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_test_project/my%20container.dart';
 import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
+import 'package:flutter_test_project/my_flexible.dart';
 
 void main() {
   debugPaintSizeEnabled = false; // Показывает границы виджетов
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'App',
         theme: ThemeData(primarySwatch: Colors.green),
-        home: MyContainer());
+        home: MyFlexible());
   }
 }
 
