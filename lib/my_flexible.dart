@@ -16,8 +16,8 @@ class MyFlexible extends StatelessWidget {
                 'T-34-85',
                 style: TextStyle(fontSize: 14, color: Colors.black87),
                 softWrap: true, // Текст не вылазит за границы родителя
-                overflow:
-                    TextOverflow.visible, // Если текст не влез, то он исчезает
+                overflow: TextOverflow
+                    .visible, // Если текст не влез, то он вылезет за границы
               ),
             ),
             Icon(

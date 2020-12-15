@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
-import 'package:flutter_test_project/my_flexible.dart';
+
+import 'pages/home_page.dart';
 
 void main() {
   debugPaintSizeEnabled = false; // Показывает границы виджетов
@@ -13,19 +14,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'App',
         theme: ThemeData(primarySwatch: Colors.green),
-        home: MyFlexible());
-  }
-}
-
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(title: Text('Testing')),
-        body: Container(
-          child: Center(
-            child: Text('TODO something'),
-          ),
-        ));
+        home: HomePage());
   }
 }
