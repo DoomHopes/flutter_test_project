@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'models/data.dart';
 import 'pages/card_view.dart';
 import 'pages/home_page.dart';
+import 'pages/menu.dart';
 import 'pages/my_flexible.dart';
 
 void main() {
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.purple,
             accentColor: Colors.black,
           ),
-          home: MyFlexible()),
+          home: Menu()),
     );
   }
 }
