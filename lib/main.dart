@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
+import 'package:provider/provider.dart';
 
+import 'models/data.dart';
 import 'pages/home_page.dart';
 
 void main() {
@@ -11,9 +13,15 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'App',
-        theme: ThemeData(primarySwatch: Colors.green),
-        home: HomePage());
+    return ChangeNotifierProvider<Data>(
+      create: (context) => Data(),
+      child: MaterialApp(
+          title: 'App',
+          theme: ThemeData(
+            primarySwatch: Colors.purple,
+            accentColor: Colors.black,
+          ),
+          home: HomePage()),
+    );
   }
 }
