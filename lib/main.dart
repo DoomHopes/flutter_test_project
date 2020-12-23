@@ -3,7 +3,9 @@ import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 import 'package:provider/provider.dart';
 
 import 'models/data.dart';
+import 'pages/card_view.dart';
 import 'pages/home_page.dart';
+import 'pages/my_flexible.dart';
 
 void main() {
   debugPaintSizeEnabled = false; // Показывает границы виджетов
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.purple,
             accentColor: Colors.black,
           ),
-          home: HomePage()),
+          home: MyFlexible()),
     );
   }
 }

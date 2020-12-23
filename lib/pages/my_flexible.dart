@@ -6,7 +6,7 @@ class MyFlexible extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('RowColumn')),
       body: Container(
-        color: Colors.grey,
+        color: Colors.purple[800],
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
@@ -21,7 +21,7 @@ class MyFlexible extends StatelessWidget {
               ),
             ),
             Icon(
-              Icons.favorite,
+              Icons.favorite_border_rounded,
               size: 60,
               color: Colors.red,
             ),
